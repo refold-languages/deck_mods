@@ -1,0 +1,41 @@
+{{#Kanji}}
+<div class="flashcard">
+    <!-- some content... -->
+</div>
+<script>
+function revealReading() {
+    // some code...
+}
+
+document.addEventListener('keypress', function(event) {
+    // some code...
+});
+
+//---------------------------------------------------------------------------------
+// add this function to reveal the reading or replay the audio on cards with kanji
+document.addEventListener('touchstart', function(event) {
+    revealReading()
+});
+//---------------------------------------------------------------------------------
+
+</script>
+{{/Kanji}}
+{{^Kanji}}
+<div class="flashcard">
+    <!-- some content... -->
+</div>
+<script>
+function autoPlayReading() {
+    // some code...
+}
+
+//---------------------------------------------------------------------------------
+// add this function to replay the audio on cards without kanji
+document.addEventListener('touchstart', function(event) {
+	autoPlayReading()
+});
+//---------------------------------------------------------------------------------
+
+autoPlayReading()
+</script>
+{{/Kanji}}
