@@ -1,0 +1,57 @@
+{{#Kanji}}
+<div class="flashcard">
+    <!-- some content... -->
+</div>
+<script>
+function isLeech() {
+    // some code...
+}
+
+function leechFormat() {
+    // some code...
+}
+
+function playSentence() {
+    // some code...
+}
+
+//---------------------------------------------------------------------------------
+// add this function to replay the sentence audio on cards with kanji
+document.addEventListener('touchstart', function(event) {
+    playSentence()
+});
+//---------------------------------------------------------------------------------
+
+leechFormat()
+playSentence()
+</script>
+{{/Kanji}}
+
+{{^Kanji}}
+<div class="flashcard">
+    <!-- some content... -->
+</div>
+<script>
+function isLeech() {
+    // some code...
+}
+
+function leechFormat() {
+    // some code...
+}
+
+function playSentence() {
+    // some code...
+}
+
+//---------------------------------------------------------------------------------
+// add this function to replay the sentence audio on cards without kanji
+document.addEventListener('touchstart', function(event) {
+    playSentence()
+});
+//---------------------------------------------------------------------------------
+
+leechFormat()
+playSentence()
+</script>
+{{/Kanji}}
